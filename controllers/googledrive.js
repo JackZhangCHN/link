@@ -6,7 +6,7 @@ const host = 'https://drive.google.com/'
 
 const output = (url , ext)=>{
   if( ext == 'mp4' || ext == 'ogg' || ext == 'webm'){
-    return `<video src="${url}" controls="controls" autoplay="autoplay"><video>`
+    return `<video src="${url}" controls="controls" autoplay="autoplay"></video>`
   }else if(ext == 'mp3' || ext == 'm4a' ){
     return `<audio src="${url}" controls="controls" autoplay="autoplay"></audio>`
   }
