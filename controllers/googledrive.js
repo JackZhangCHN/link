@@ -19,10 +19,10 @@ module.exports = {
 
     let body_view = await http.get(host + 'file/d/'+id+'/view')
 
-    let ext = (body_view.match(/\.([0-9a-z]+)\"><meta property=\"og/) || ['',''])[1]
+    let ext = (body_view.body.match(/\.([0-9a-z]+)\"><meta property=\"og/) || ['',''])[1]
 
     let { body , headers }= await http.get(host + 'uc?id='+id+'&export=download')
-    
+
     if(headers.location){
       reallink = headers.location
     }else{
