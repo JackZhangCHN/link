@@ -5,7 +5,7 @@
 获取直链，目前支持
 
 ## google drive 
-/gd/:fileid?output=(raw|json|proxy)
+/gd/:fileid?output=(raw|json|proxy|preview)
 
 
 
