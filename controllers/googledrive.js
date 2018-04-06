@@ -9,6 +9,8 @@ const output = (url , ext)=>{
     return `<video src="${url}" controls="controls" autoplay="autoplay"></video>`
   }else if(ext == 'mp3' || ext == 'm4a' ){
     return `<audio src="${url}" controls="controls" autoplay="autoplay"></audio>`
+  }else{
+    return ''
   }
 }
 
