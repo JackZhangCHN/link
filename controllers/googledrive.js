@@ -25,7 +25,7 @@ module.exports = {
 
     let ext = (title.match(/\.([0-9a-z]+)$/) || ['',''])[1]
 
-    let miss = body_view.indexOf('errorMessage') >= 0
+    let miss = body_view.body.indexOf('errorMessage') >= 0
 
     if( !miss ){
 
